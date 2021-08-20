@@ -14,7 +14,7 @@ Drug-Dev-A will be using an open-source toolkit called [DeepPurpose](https://git
 # About DeepPurpose:
 ![](/figure1.png) <br>
 
-# DeepPurpose Installation for Tutorials:
+# Working With DeepPurpose:
 ![](/figure2.png) <br>
 The work-horse for playing with DeepPurpose will be Google Colaboratory or Collab in short. We will be using [Google Colaboratory](https://colab.research.google.com/) to install DeepPurpose and it's dependencies for running/eplicating the tutorials. 
 1.Google Colab does not come with Conda Environment installed. Conda Environment can be installed on google colab through 'pip': 
@@ -50,7 +50,7 @@ oneliner.repurpose(*load_SARS_CoV2_Protease_3CL(), *load_antiviral_drugs(no_cid 
 ``` 
 6. Run drug.py as ```python drug.py``` and voila you have retrieved a list of repurposing drugs from a proprietary library.
 
-# More DeepPurpose Tutorials:
+# Replicated DeepPurpose Tutorials:
 ### Case Study 1(a): A Framework for Drug Target Interaction Prediction, with less than 10 lines of codes.
 In addition to the DTI prediction, we also provide repurpose and virtual screening functions to rapidly generation predictions.
 
@@ -63,7 +63,9 @@ Given a new target sequence (e.g. SARS-CoV2 3CL Protease), retrieve a list of re
 ### Case Study 2(b): Repurposing using Customized training data, with One Line.
 Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs).
 
-### Contributors (Slack Usernames)
+![](/figure3.gif) <br>
+
+## Contributors (Slack Usernames) | All people contributed to running their copy of DeepPurpose on Colab
 ### Case Study 1(a): 
 1. @Emon : Installed resources locally and on google colab, replicated Case Study 1(a) and troubleshooting of the errors.
 2. @Hameed : Installed resources locally and on google colab, replicated Case Study 1(a) and troubleshooting of the errors.
@@ -88,5 +90,6 @@ Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID17
 1. @Jass: All graphical representation in Adobe Suite. 
 2. @Siddhant: Idea Generation and Github Repository Management.
 
-# Contact
-Please send questions to siddhaantsharma.ss@gmail.com
+
+## Contact
+Please send questions/issues to siddhaantsharma.ss@gmail.com
