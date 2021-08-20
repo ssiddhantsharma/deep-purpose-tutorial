@@ -6,6 +6,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/ssiddhantsharma/deep-purpose-tutorial?style=social)
 
 ### A low code tutorial for replicating DeepPurpose Library for Drug-Target Interaction (DTI) for the HackBio'2021 Internship as a part of Team Drug-Development-A
+---
 
 ![](https://github.com/ssiddhantsharma/team-greider/blob/main/HackBio.jfif) <br>
 
@@ -76,6 +77,8 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 ## DeepPurpose Reference: 
 If you found this package useful, please see the publication [DeepPurpose](https://doi.org/10.1093/bioinformatics/btaa1005):
 
+---
+
 # Replicated DeepPurpose Tutorials:
 ### Case Study 1(a): A Framework for Drug Target Interaction Prediction, with less than 10 lines of codes.
 In addition to the DTI prediction, we also provide repurpose and virtual screening functions to rapidly generation predictions.
@@ -126,6 +129,8 @@ Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID17
 ### Contributors (Slack Usernames)
 1. @Jass: All graphical representation in Adobe Suite. 
 2. @Siddhant: Idea Generation and Github Repository Management.
+
+---
 
 ## 🎨 Future Improvements/Ideas: 
 One can try to benchmark DeepPurpose with the very new (August 2021) library, [TorchDrug](https://torchdrug.ai/), might give something good to compare to. More about installing TorchDrug [here](https://rmurphy2718.github.io/posts/2021/08/torch-drug-install/). In case of any questions, please send to siddhaantsharma.ss@gmail.com
