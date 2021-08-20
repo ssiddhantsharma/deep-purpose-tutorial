@@ -127,8 +127,8 @@ If you found this package useful, please see the publication [DeepPurpose](https
 3. @Maurya : Installed resources locally and on google colab, replicated Case Study 2(b) and confirmation of final reproducibility.
 
 ### Contributors (Slack Usernames)
-1. @Jass: All graphical representation in Adobe Suite. 
-2. @Siddhant: Idea Generation and Github Repository Management.
+1. @Jass: All graphical figures in Adobe Suite and setting up Binder.
+2. @Siddhant: Idea Generation and Github Repository Management and Netlify Porting.
 
 ## 🎨 Future Improvements/Ideas: 
 One can try to benchmark DeepPurpose with the very new (August 2021) library, [TorchDrug](https://torchdrug.ai/), might give something good to compare to. More about installing TorchDrug [here](https://rmurphy2718.github.io/posts/2021/08/torch-drug-install/). In case of any questions, please send to siddhaantsharma.ss@gmail.com
