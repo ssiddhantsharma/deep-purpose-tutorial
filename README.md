@@ -14,21 +14,43 @@ Drug-Dev-A will be using an open-source toolkit called [DeepPurpose](https://git
 # About DeepPurpose:
 ![](/figure1.png) <br>
 
-# DeepPurpose Installation:
+# DeepPurpose Installation for Tutorials:
 ![](/figure2.png) <br>
-One can try to install DeepPurpose for replicating the tutorials either on their local machine or on [Google Colaboratory](https://colab.research.google.com/)
-We recommend to install it on Google Colab for faster, on-cloud performances. Conda needs to be installed on Google Colab and can be done [through]: (https://towardsdatascience.com/conda-google-colab-75f7c867a522)
-
-To install locally, we recommend to install from `pip`:
-```bash
-conda create -n DeepPurpose python=3.6
-conda activate DeepPurpose
+The work-horse for playing with DeepPurpose will be Google Colaboratory or Collab in short. We will be using [Google Colaboratory](https://colab.research.google.com/) to install DeepPurpose and it's dependencies for running/eplicating the tutorials. 
+1.Google Colab does not come with Conda Environment installed. Conda Environment can be installed on google colab through 'pip': 
+```
+!pip install -q condacolab
+import condacolab 
+condacolab.install_anaconda()
+``` 
+2. Checking if Conda is working all fine:
+```
+import condacolab
+condacolab.check()
+!conda --version
+```
+3. All good! Now we will install DeepPurpose and it's dependencies: 
+```
+%%bash
+git clone https://github.com/kexinhuang12345/DeepPurpose.git ## Cloning the DeepPurpose Code Repository
+cd DeepPurpose ## Change Directory to DeepPurpose
+conda env create -f environment.yml # Creating New Environment
+source activate DeepPurpose
+```
+4. We have DeepPurpose, now installing some other dependencies:
+```%%bash
 conda install -c conda-forge rdkit
 conda install -c conda-forge notebook
-pip install git+https://github.com/bp-kelley/descriptastorus 
-pip install DeepPurpose
 ```
-# Tutorials:
+5. Running a simple file for the tutorial, let's call it drug.py. Contents of drug.py:
+```
+from DeepPurpose import oneliner  #Importing the oneliner package
+from DeepPurpose.dataset import *  #Importing the proprietary library of drugs
+oneliner.repurpose(*load_SARS_CoV2_Protease_3CL(), *load_antiviral_drugs(no_cid = True))
+``` 
+6. Run drug.py as ```python drug.py``` and voila you have retrieved a list of repurposing drugs from a proprietary library.
+
+# More DeepPurpose Tutorials:
 ### Case Study 1(a): A Framework for Drug Target Interaction Prediction, with less than 10 lines of codes.
 In addition to the DTI prediction, we also provide repurpose and virtual screening functions to rapidly generation predictions.
 
