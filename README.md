@@ -14,8 +14,5 @@ What our team will be doing is replicating some of the DeepPurpose tutorialson o
 ![Figure1](https://github.com/sssiddhantsharma/deep-purpose-tutoria/blob/main/figure1.png) <br>
 ![Figure2](https://github.com/ssiddhantsharma/deep-purpose-tutoria/blob/main/figure2.png) <br>
 
-## 🚀 Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated** 🎉
-*Working on your first Pull Request? [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)*
+## 🚀 End
 ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png)
