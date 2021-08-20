@@ -3,8 +3,8 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ssiddhantsharma/deep-purpose-tutorial/graphs/commit-activity) 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Repo stars](https://img.shields.io/github/stars/ssiddhantsharma/deep-purpose-tutorial)](https://github.com/ssiddhantsharma/deep-purpose-tutorial/stargazers)
-[![GitHub Repo forks](https://img.shields.io/github/forks/ssiddhantsharma/deep-purpose-tutorial)](https://github.com/ssiddhantsharma/deep-purpose-tutoria/network/members)
+![GitHub Repo stars](https://img.shields.io/github/stars/ssiddhantsharma/deep-purpose-tutorial?style=social)
+![GitHub forks](https://img.shields.io/github/forks/ssiddhantsharma/deep-purpose-tutorial?style=social)
 
 ### A low code tutorial for replicating DeepPurpose Library for Drug-Target Interaction (DTI) for the HackBio'2021 Virtual Internship as a part of Team Drug-Development-A
 
