@@ -80,25 +80,25 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 ### Case Study 1(a): A Framework for Drug Target Interaction Prediction, with less than 10 lines of codes.
 In addition to the DTI prediction, we also provide repurpose and virtual screening functions to rapidly generation predictions.
 
-**Link to the binder run for 1(a):** <br>
+**Link to the binder run for 1(a):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_1_(a)_A_Framework_for_Drug_Target_Interaction_Prediction.ipynb) <br> 
 **[Video-tutorial of 1(a) by a member of team through Loom-App](https://www.loom.com/share/1564269d811d410c9fcdcfdb2f55967a?sharedAppSource=personal_library)** 
 
 ### Case Study 1(b): A Framework for Drug Property Prediction, with less than 10 lines of codes.
 Many dataset is in the form of high throughput screening data, which have only drug and its activity score. It can be formulated as a drug property prediction task. We also provide a repurpose function to predict over large space of drugs. 
 
-**Link to the binder run for 1(b):** <br>
+**Link to the binder run for 1(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_1_(b)_A_Framework_for_Drug_Property_Prediction.ipynb) <br>
 **[Video-tutorial of 1(b) by a member of team through Loom-App](https://www.loom.com/share/b38b55e16e184b45a3ae0fde3e3a9df0)** 
 
 ### Case Study 2 (a): Antiviral Drugs Repurposing for SARS-CoV2 3CLPro, using One Line.
 Given a new target sequence (e.g. SARS-CoV2 3CL Protease), retrieve a list of repurposing drugs from a curated drug library of 81 antiviral drugs. The Binding Score is the Kd values.
 
-**Link to the binder run for 2(a):** <br>
+**Link to the binder run for 2(a):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(a)_Antiviral_Drugs_Repurposing_for_SARS_CoV2_3CLPro_using_One_Line.ipynb) <br>
 **[Video-tutorial of 2(a) by a member of team through Loom-App](https://www.loom.com/share/7e3eac0a45144b9abb60bbea17383f27)** 
 
 ### Case Study 2(b): Repurposing using Customized training data, with One Line.
 Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs).
 
-**Link to the binder run for 2(b):**
+**Link to the binder run for 2(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(b)__Repurposing_using_Customized_training_data_with_One_Line.ipynb)
 
 ## DeepPurpose Reference: 
 If you found this package useful, please see the publication [DeepPurpose](https://doi.org/10.1093/bioinformatics/btaa1005):
@@ -127,7 +127,7 @@ If you found this package useful, please see the publication [DeepPurpose](https
 3. @Maurya : Installed resources locally and on google colab, replicated Case Study 2(b) and confirmation of final reproducibility.
 
 ### Contributors (Slack Usernames)
-1. @Jass: All graphical figures in Adobe Suite and setting up Binder.
+1. @Jass: All graphical figures in Adobe Suite and setting up Binder wrapping for the tutorials.
 2. @Siddhant: Idea Generation and Github Repository Management and Netlify Porting.
 
 ## 🎨 Future Improvements/Ideas: 
