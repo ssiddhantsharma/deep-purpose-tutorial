@@ -8,11 +8,10 @@
 
 ![HackBio](https://github.com/ssiddhantsharma/team-greider/blob/main/HackBio.jfif) <br>
 
-> Drug-Dev-A will be using an open-source toolkit called DeepPurpose [https://github.com/kexinhuang12345/DeepPurpose] for Drug-Target Interaction (DTI) prediction which measures the binding affinity of drug molecules to the protein targets. More specifically, virtual screening and drug repurposing are two main applications based on DTI. Virtual screening helps identify ligand candidates that can bind to the protein of interest, whereas drug repurposing finds new therapeutic purposes for existing drugs. The toolkit is developed fairly recent in 2020 by Marinka Zitnik's lab at Harvard [https://zitniklab.hms.harvard.edu/drugml/], using a concoction of AI algorithms for end-to-end drug development.
-What our team will be doing is replicating some of the DeepPurpose tutorialson our own google colaboratories for checking the reproducibility of the code samples and learning how this toolkit wraps deep learning (DL) models promising performances for DTI prediction to a comprehensive and easy-to-use DL library. Combining machine learned approaches to drug discovery is an effective way as shown by this web-app by the lab: http://deeppurpose.sunlab.org/ .This README.md contains all the necessary information to replicate the tutorials for DeepPurpose <br>
+Drug-Dev-A will be using an open-source toolkit called DeepPurpose [https://github.com/kexinhuang12345/DeepPurpose] for Drug-Target Interaction (DTI) prediction which measures the binding affinity of drug molecules to the protein targets. More specifically, virtual screening and drug repurposing are two main applications based on DTI. Virtual screening helps identify ligand candidates that can bind to the protein of interest, whereas drug repurposing finds new therapeutic purposes for existing drugs. The toolkit is developed fairly recent in 2020 by Marinka Zitnik's lab at Harvard [https://zitniklab.hms.harvard.edu/drugml/], using a concoction of AI algorithms for end-to-end drug development. What our team will be doing is replicating some of the DeepPurpose tutorialson our own google colaboratories for checking the reproducibility of the code samples and learning how this toolkit wraps deep learning (DL) models promising performances for DTI prediction to a comprehensive and easy-to-use DL library. This README.md contains all the necessary information to replicate the tutorials for DeepPurpose <br>
 
-![Figure1](https://github.com/sssiddhantsharma/deep-purpose-tutoria/blob/main/figure1.png) <br>
-![Figure2](https://github.com/ssiddhantsharma/deep-purpose-tutoria/blob/main/figure2.png) <br>
+![Figure1](https://github.com/ssiddhantsharma/deep-purpose-tutorial/blob/main/figure1.png) <br>
+![Figure2](https://github.com/ssiddhantsharma/deep-purpose-tutorial/blob/main/figure2.png) <br>
 
 ## 🚀 End
 ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png)
