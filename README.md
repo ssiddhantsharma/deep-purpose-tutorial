@@ -74,9 +74,6 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 |  13  |      Ritonavir       | SARS-CoV2 3CL Protease |     492.19    |
 ....
 ```
-## DeepPurpose Reference: 
-If you found this package useful, please see the publication [DeepPurpose](https://doi.org/10.1093/bioinformatics/btaa1005):
-
 ---
 
 # Replicated DeepPurpose Tutorials:
@@ -102,6 +99,9 @@ Given a new target sequence (e.g. SARS-CoV2 3CL Protease), retrieve a list of re
 Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs).
 
 **Link to the binder run for 2(b):**
+
+## DeepPurpose Reference: 
+If you found this package useful, please see the publication [DeepPurpose](https://doi.org/10.1093/bioinformatics/btaa1005):
 
 ![](/figure3.gif) <br>
 
@@ -129,8 +129,6 @@ Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID17
 ### Contributors (Slack Usernames)
 1. @Jass: All graphical representation in Adobe Suite. 
 2. @Siddhant: Idea Generation and Github Repository Management.
-
----
 
 ## 🎨 Future Improvements/Ideas: 
 One can try to benchmark DeepPurpose with the very new (August 2021) library, [TorchDrug](https://torchdrug.ai/), might give something good to compare to. More about installing TorchDrug [here](https://rmurphy2718.github.io/posts/2021/08/torch-drug-install/). In case of any questions, please send to siddhaantsharma.ss@gmail.com
