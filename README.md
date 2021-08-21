@@ -146,13 +146,53 @@ Many dataset is in the form of high throughput screening data, which have only d
 
 ### Case Study 2 (a): Antiviral Drugs Repurposing for SARS-CoV2 3CLPro, using One Line.
 Given a new target sequence (e.g. SARS-CoV2 3CL Protease), retrieve a list of repurposing drugs from a curated drug library of 81 antiviral drugs. The Binding Score is the Kd values. The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
-
+```
+----output----
+Drug Repurposing Result for SARS-CoV2 3CL Protease
++------+----------------------+------------------------+---------------+
+| Rank |      Drug Name       |      Target Name       | Binding Score |
++------+----------------------+------------------------+---------------+
+|  1   |      Sofosbuvir      | SARS-CoV2 3CL Protease |     190.25    |
+|  2   |     Daclatasvir      | SARS-CoV2 3CL Protease |     214.58    |
+|  3   |      Vicriviroc      | SARS-CoV2 3CL Protease |     315.70    |
+|  4   |      Simeprevir      | SARS-CoV2 3CL Protease |     396.53    |
+|  5   |      Etravirine      | SARS-CoV2 3CL Protease |     409.34    |
+|  6   |      Amantadine      | SARS-CoV2 3CL Protease |     419.76    |
+|  7   |      Letermovir      | SARS-CoV2 3CL Protease |     460.28    |
+|  8   |     Rilpivirine      | SARS-CoV2 3CL Protease |     470.79    |
+|  9   |      Darunavir       | SARS-CoV2 3CL Protease |     472.24    |
+|  10  |      Lopinavir       | SARS-CoV2 3CL Protease |     473.01    |
+|  11  |      Maraviroc       | SARS-CoV2 3CL Protease |     474.86    |
+|  12  |    Fosamprenavir     | SARS-CoV2 3CL Protease |     487.45    |
+|  13  |      Ritonavir       | SARS-CoV2 3CL Protease |     492.19    |
+....
+```
 **Link to the binder run for 2(a):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(a)_Antiviral_Drugs_Repurposing_for_SARS_CoV2_3CLPro_using_One_Line.ipynb) <br>
 **[Video-tutorial of 2(a) by a member of team through Loom-App](https://www.loom.com/share/7e3eac0a45144b9abb60bbea17383f27)** 
 
 ### Case Study 2(b): Repurposing using Customized training data, with One Line.
-Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs). The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
-
+Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs). The code for this replicated tutorial is available in a jupyter notebook interfaced with binder.
+```
+----output----
+Drug Repurposing Result for SARS-CoV2 3CL Protease
++------+----------------------+------------------------+---------------+
+| Rank |      Drug Name       |      Target Name       | Binding Score |
++------+----------------------+------------------------+---------------+
+|  1   |      Sofosbuvir      | SARS-CoV2 3CL Protease |     190.25    |
+|  2   |     Daclatasvir      | SARS-CoV2 3CL Protease |     214.58    |
+|  3   |      Vicriviroc      | SARS-CoV2 3CL Protease |     315.70    |
+|  4   |      Simeprevir      | SARS-CoV2 3CL Protease |     396.53    |
+|  5   |      Etravirine      | SARS-CoV2 3CL Protease |     409.34    |
+|  6   |      Amantadine      | SARS-CoV2 3CL Protease |     419.76    |
+|  7   |      Letermovir      | SARS-CoV2 3CL Protease |     460.28    |
+|  8   |     Rilpivirine      | SARS-CoV2 3CL Protease |     470.79    |
+|  9   |      Darunavir       | SARS-CoV2 3CL Protease |     472.24    |
+|  10  |      Lopinavir       | SARS-CoV2 3CL Protease |     473.01    |
+|  11  |      Maraviroc       | SARS-CoV2 3CL Protease |     474.86    |
+|  12  |    Fosamprenavir     | SARS-CoV2 3CL Protease |     487.45    |
+|  13  |      Ritonavir       | SARS-CoV2 3CL Protease |     492.19    |
+....
+```
 **Link to the binder run for 2(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(b)__Repurposing_using_Customized_training_data_with_One_Line.ipynb) <br>
 **[Video-tutorial of 2(b) by a member of team through Loom-App](https://www.loom.com/share/5a3254e75b544adaba96626f79eaa0a6)** 
 
