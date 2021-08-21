@@ -133,7 +133,8 @@ X_repurpose, drug_name, target, target_name = ['CCCCCCCOc1cccc(c1)C([O-])=O', ..
 _ = models.virtual_screening(X_repurpose, target, net, drug_name, target_name)
 ```
 **Figure: The Target SMILES used for Virtual Screening in the trained model**
-![](https://user-images.githubusercontent.com/29195354/130311360-3a6bc90f-e1ca-4ba0-ba19-8e89c8b431b0.png)
+![image](https://user-images.githubusercontent.com/29195354/130312060-24e68b4b-681e-417e-bdf6-5646202873a5.png)
+
 
 **Link to the binder run for 1(a):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_1_(a)_A_Framework_for_Drug_Target_Interaction_Prediction.ipynb) <br> 
 **[Video-tutorial of 1(a) by a member of team through Loom-App](https://www.loom.com/share/1564269d811d410c9fcdcfdb2f55967a?sharedAppSource=personal_library)** 
