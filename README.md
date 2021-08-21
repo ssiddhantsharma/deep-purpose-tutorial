@@ -17,7 +17,7 @@ Drug-Dev-A will be using an open-source toolkit called [DeepPurpose](https://git
 
 # Working With DeepPurpose:
 ![](/figure2.png) <br>
-**The work-horse for playing with DeepPurpose will be Google Colaboratory or Collab in short. We will be using [Google Colaboratory](https://colab.research.google.com/) to install DeepPurpose and it's dependencies for running/eplicating the tutorials.** 
+**The work-horse for playing with DeepPurpose will be Google Colaboratory or Colab in short. We will be using [Google Colaboratory](https://colab.research.google.com/) to install DeepPurpose and it's dependencies for running/eplicating the tutorials. Each of the steps should be run in different cells in Colab** 
 
 1. Google Colab does not come with Conda Environment installed. Conda Environment can be installed on google colab through 'pip': 
 ```
@@ -78,57 +78,57 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 
 # Replicated DeepPurpose Tutorials:
 ### Case Study 1(a): A Framework for Drug Target Interaction Prediction, with less than 10 lines of codes.
-In addition to the DTI prediction, we also provide repurpose and virtual screening functions to rapidly generation predictions.
+In addition to the DTI prediction, we also provide repurpose and virtual screening functions to rapidly generation predictions. The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
 
 **Link to the binder run for 1(a):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_1_(a)_A_Framework_for_Drug_Target_Interaction_Prediction.ipynb) <br> 
 **[Video-tutorial of 1(a) by a member of team through Loom-App](https://www.loom.com/share/1564269d811d410c9fcdcfdb2f55967a?sharedAppSource=personal_library)** 
 
 ### Case Study 1(b): A Framework for Drug Property Prediction, with less than 10 lines of codes.
-Many dataset is in the form of high throughput screening data, which have only drug and its activity score. It can be formulated as a drug property prediction task. We also provide a repurpose function to predict over large space of drugs. 
+Many dataset is in the form of high throughput screening data, which have only drug and its activity score. It can be formulated as a drug property prediction task. We also provide a repurpose function to predict over large space of drugs. The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
 
 **Link to the binder run for 1(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_1_(b)_A_Framework_for_Drug_Property_Prediction.ipynb) <br>
 **[Video-tutorial of 1(b) by a member of team through Loom-App](https://www.loom.com/share/b38b55e16e184b45a3ae0fde3e3a9df0)** 
 
 ### Case Study 2 (a): Antiviral Drugs Repurposing for SARS-CoV2 3CLPro, using One Line.
-Given a new target sequence (e.g. SARS-CoV2 3CL Protease), retrieve a list of repurposing drugs from a curated drug library of 81 antiviral drugs. The Binding Score is the Kd values.
+Given a new target sequence (e.g. SARS-CoV2 3CL Protease), retrieve a list of repurposing drugs from a curated drug library of 81 antiviral drugs. The Binding Score is the Kd values. The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
 
 **Link to the binder run for 2(a):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(a)_Antiviral_Drugs_Repurposing_for_SARS_CoV2_3CLPro_using_One_Line.ipynb) <br>
 **[Video-tutorial of 2(a) by a member of team through Loom-App](https://www.loom.com/share/7e3eac0a45144b9abb60bbea17383f27)** 
 
 ### Case Study 2(b): Repurposing using Customized training data, with One Line.
-Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs).
+Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs). The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
 
 **Link to the binder run for 2(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(b)__Repurposing_using_Customized_training_data_with_One_Line.ipynb)
 
 ## DeepPurpose Reference: 
-If you found this package useful, please see the publication [DeepPurpose](https://doi.org/10.1093/bioinformatics/btaa1005):
+If you found this package interactive, please see their publication [DeepPurpose](https://doi.org/10.1093/bioinformatics/btaa1005):
 
 ![](/figure3.gif) <br>
 
-## Contributors (Slack Usernames) <br> All people contributed to running their copy of DeepPurpose on Colab
+## Contributors (Slack Usernames) <br> All people contributed to running their copy of DeepPurpose on Colab atleast once.
 ### Case Study 1(a): 
-1. @Emon : Installed resources locally and on google colab, replicated Case Study 1(a) and troubleshooting of the errors.
+1. @Emon : Installed resources locally and on google colab, replicated Case Study 1(a).
 2. @Hameed : Installed resources locally and on google colab, replicated Case Study 1(a) and recording the tutorial video.
 3. @Sanjana : Installed resources locally and on google colab, replicated Case Study 1(a) and confirmation of final reproducibility.
 
 ### Case Study 1(b): 
 1. @eshaan : Installed resources locally and on google colab, replicated Case Study 1(b) and recording the tutorial video.
-2. @Ayush : Installed resources locally and on google colab, replicated Case Study 1(b) and troubleshooting of the team's errors.
-3. @Anjali : Installed resources locally and on google colab, replicated Case Study 1(b) and confirmation of final reproducibility.
+2. @Ayush : Installed resources locally and on google colab, replicated Case Study 1(b) and troubleshooting of the whole team's errors.
+3. @Anjali : Installed resources locally and on google colab, replicated Case Study 1(b) and confirmation of final reproducibility and designed the DeepPurpose Banner.
 
 ### Case Study 2(a): 
-1. @UmasriSankarlal : Installed resources locally and on google colab, replicated Case Study 2(a) and troubleshooting of the team's errors.
+1. @UmasriSankarlal : Installed resources locally and on google colab, replicated Case Study 2(a).
 2. @jovel : Installed resources locally and on google colab, replicated Case Study 2(a) and recording the tutorial video.
 3. @Ayesha : Installed resources locally and on google colab, replicated Case Study 2(a) and confirmation of final reproducibility.
 
 ### Case Study 2(b): 
-1. @Benson: Installed resources locally and on google colab, replicated Case Study 2(b) and troubleshooting of the team's errors.
+1. @Benson: Installed resources locally and on google colab, replicated Case Study 2(b) and recording the tutorial video.
 2. @Dolu : Installed resources locally and on google colab, replicated Case Study 2(b) and troubleshooting of the team's errors.
-3. @Maurya : Installed resources locally and on google colab, replicated Case Study 2(b) and confirmation of final reproducibility.
+3. @Maurya : Installed resources locally and on google colab, replicated Case Study 2(b) and confirmation of final reproducibility and DeepPurpose Banner.
 
 ### Contributors (Slack Usernames)
-1. @Jass: All graphical figures in Adobe Suite and setting up Binder wrapping for the tutorials.
-2. @Siddhant: Idea Generation and Github Repository Management and Netlify Porting.
+1. @Jass: All graphical figures in Adobe Suite and setting up Binder wrapping for the jupyter notebooks of the tutorials.
+2. @Siddhant: Idea Generation and Github Repository Management.
 
 ## 🎨 Future Improvements/Ideas: 
 One can try to benchmark DeepPurpose with the very new (August 2021) library, [TorchDrug](https://torchdrug.ai/), might give something good to compare to. More about installing TorchDrug [here](https://rmurphy2718.github.io/posts/2021/08/torch-drug-install/). In case of any questions, please send to siddhaantsharma.ss@gmail.com
