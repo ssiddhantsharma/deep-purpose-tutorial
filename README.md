@@ -10,7 +10,7 @@
 
 ![](/banner.png) <br>
 
-Drug-Dev-A will be using an open-source toolkit called [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) for Drug-Target Interaction (DTI) prediction which measures the binding affinity of drug molecules to the protein targets. What our team will be doing is replicating some of the DeepPurpose tutorialson our own google colaboratories for checking the reproducibility of the code samples and learning how this toolkit wraps deep learning (DL) models promising performances for DTI prediction to a comprehensive and easy-to-use DL library. Combining machine learned approaches to drug discovery is an effective way as shown by this [web-app](http://deeppurpose.sunlab.org/). This README.md contains all the necessary information to replicate the tutorials for DeepPurpose. <br>
+Drug-Dev-A will be using an open-source toolkit called [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose) for Drug-Target Interaction (DTI) prediction which measures the binding affinity of drug molecules to the protein targets. What our team will be doing is replicating some of the DeepPurpose tutorialson our own google colaboratories for checking the reproducibility of the code samples and learning how this toolkit wraps deep learning (DL) models promising performances for DTI prediction to a comprehensive and easy-to-use DL library. Combining machine learned approaches to drug discovery is an effective way as shown by this [web-app](http://deeppurpose.sunlab.org/). This README.md contains all the necessary information to replicate the tutorials for DeepPurpose.
 
 # About DeepPurpose:
 ![](/figure1.png) <br>
@@ -80,6 +80,61 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 ### Case Study 1(a): A Framework for Drug Target Interaction Prediction, with less than 10 lines of codes.
 In addition to the DTI prediction, we also provide repurpose and virtual screening functions to rapidly generation predictions. The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
 
+** Steps to walkthrough in this tutorial:** 
+1. Import the DeepPurpose dependencies as we did earlier:
+```
+from DeepPurpose import DTI as models
+from DeepPurpose.utils import *
+from DeepPurpose.dataset import *
+```
+2. Loading the data:
+```
+# Load Data, an array of SMILES for drug, an array of Amino Acid Sequence for Target and an array of binding values/0-1 label.
+# e.g. ['Cc1ccc(CNS(=O)(=O)c2ccc(s2)S(N)(=O)=O)cc1', ...], ['MSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTH...', ...], [0.46, 0.49, ...]
+# In this example, BindingDB with Kd binding score is used.
+```
+3. Run the tutorial python file in the colab (instructions mentioned in the code comments): 
+```
+X_drug, X_target, y  = process_BindingDB(download_BindingDB(SAVE_PATH),
+					 y = 'Kd', 
+					 binary = False, 
+					 convert_to_log = True)
+
+# Type in the encoding names for drug/protein.
+drug_encoding, target_encoding = 'MPNN', 'Transformer'
+
+# Data processing, here we select cold protein split setup.
+train, val, test = data_process(X_drug, X_target, y, 
+                                drug_encoding, target_encoding, 
+                                split_method='cold_protein', 
+                                frac=[0.7,0.1,0.2])
+
+# Generate new model using default parameters; also allow model tuning via input parameters.
+config = generate_config(drug_encoding, target_encoding, transformer_n_layer_target = 8)
+net = models.model_initialize(**config)
+
+# Train the new model.
+# Detailed output including a tidy table storing validation loss, metrics, AUC curves figures and etc. are stored in the ./result folder.
+net.train(train, val, test)
+
+# or simply load pretrained model from a model directory path or reproduced model name such as DeepDTA
+net = models.model_pretrained(MODEL_PATH_DIR or MODEL_NAME)
+
+# Repurpose using the trained model or pre-trained model
+# In this example, loading repurposing dataset using Broad Repurposing Hub and SARS-CoV 3CL Protease Target.
+X_repurpose, drug_name, drug_cid = load_broad_repurposing_hub(SAVE_PATH)
+target, target_name = load_SARS_CoV_Protease_3CL()
+
+_ = models.repurpose(X_repurpose, target, net, drug_name, target_name)
+
+# Virtual screening using the trained model or pre-trained model 
+X_repurpose, drug_name, target, target_name = ['CCCCCCCOc1cccc(c1)C([O-])=O', ...], ['16007391', ...], ['MLARRKPVLPALTINPTIAEGPSPTSEGASEANLVDLQKKLEEL...', ...], ['P36896', 'P00374']
+
+_ = models.virtual_screening(X_repurpose, target, net, drug_name, target_name)
+```
+**Figure: The Target SMILES used for Virtual Screening in the trained model**
+![](https://user-images.githubusercontent.com/29195354/130311360-3a6bc90f-e1ca-4ba0-ba19-8e89c8b431b0.png)
+
 **Link to the binder run for 1(a):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_1_(a)_A_Framework_for_Drug_Target_Interaction_Prediction.ipynb) <br> 
 **[Video-tutorial of 1(a) by a member of team through Loom-App](https://www.loom.com/share/1564269d811d410c9fcdcfdb2f55967a?sharedAppSource=personal_library)** 
 
@@ -98,7 +153,8 @@ Given a new target sequence (e.g. SARS-CoV2 3CL Protease), retrieve a list of re
 ### Case Study 2(b): Repurposing using Customized training data, with One Line.
 Given a new target sequence (e.g. SARS-CoV 3CL Pro), training on new data (AID1706 Bioassay), and then retrieve a list of repurposing drugs from a proprietary library (e.g. antiviral drugs). The code for this replicated tutorial is available in a jupyter notebook interfaced with binder. 
 
-**Link to the binder run for 2(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(b)__Repurposing_using_Customized_training_data_with_One_Line.ipynb)
+**Link to the binder run for 2(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(b)__Repurposing_using_Customized_training_data_with_One_Line.ipynb) <br>
+**[Video-tutorial of 2(b) by a member of team through Loom-App](https://www.loom.com/share/5a3254e75b544adaba96626f79eaa0a6)** 
 
 ## DeepPurpose Reference: 
 If you found this package interactive, please see their publication [DeepPurpose](https://doi.org/10.1093/bioinformatics/btaa1005):
