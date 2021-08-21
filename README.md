@@ -193,7 +193,7 @@ Drug Repurposing Result for SARS-CoV2 3CL Protease
 |  13  |      Ritonavir       | SARS-CoV2 3CL Protease |     492.19    |
 ....
 ```
-**Link to the binder run for 2(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=utorial-notebooks%2FHackbio_Case_Study_2_(b)__Repurposing_using_Customized_training_data_with_One_Line.ipynb) <br>
+**Link to the binder run for 2(b):** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ssiddhantsharma/deep-purpose-tutorial/HEAD?filepath=tutorial-notebooks%2FHackbio_Case_Study_2_(b)__Repurposing_using_Customized_training_data_with_One_Line.ipynb) <br>
 **[Video-tutorial of 2(b) by a member of team through Loom-App](https://www.loom.com/share/5a3254e75b544adaba96626f79eaa0a6)** 
 
 ## DeepPurpose Reference: 
